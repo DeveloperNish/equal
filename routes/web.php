@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/*
 use App\Group;
 use App\User;
 
@@ -74,7 +76,10 @@ Route::get('/', function () {
          echo "<br><b>$user->firstname</b> has to Recieve <b>$".$tr->amount."</b> from <b>".User::find($tr->payer_id)->firstname."</b> <br>";
       }
 });
+*/
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/','PublicController@index')->name('public.index');
+Route::get('/register','PublicController@register')->name('public.register');
+Route::get('/dashboard','DashboardController@index')->name('app.dashboard');

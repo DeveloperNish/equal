@@ -1,0 +1,183 @@
+@import url('fonts.css');
+
+body {
+    background-image: url('../img/bg/polyblur.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.grid-container {
+    height: 100vh;
+    padding: 0;
+}
+
+.wrap {
+    position: absolute;
+    width: 650px;
+    height: 500px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    margin-left: -475px;
+    margin-top: -310px;
+}
+
+.wrap > .brand {
+    position: relative;
+    width : 100%;
+    text-align: center;
+    height: 80px;
+}
+
+.brand > .logo {
+    position: relative;
+    width: auto;
+    height: 80px;
+    right: -75px;
+}
+
+.wrap > .loginbox {
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+    margin-top: 50px;
+}
+
+.loginbox > .links {
+    position: relative;
+    width: 150px;
+    height: 340px;
+    float: left;
+}
+
+.links > a {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    width: 90%;
+    text-align: right;
+    color: #797979;
+}
+
+.links > a:first-child { 
+    margin-top: 25px;
+}
+
+.links > a:hover {
+    color: #28829E;
+}
+
+.links > .active, .links > .active:hover {
+    color: #ffffff;
+}
+
+.loginbox > .box {
+    position: relative;
+    width: 500px;
+    height: 340px;
+    background: rgba(255,255,255,0.2);
+    float: right;
+    border-radius: 20px;
+    border: 5px solid #D28808;
+}
+
+.loginbox::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loginbox > .box .inputfield {
+    width: 80%;
+    height: 55px;
+    background: white;
+    margin-left: 10%;
+    margin-top: 40px;
+    border: 2px solid #D28808;
+    border-radius : 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #95989A;
+}
+
+.loginbox > .box .inputfield:nth-child(3) {
+    margin-top: 25px;
+}
+
+
+.loginbox > .box .optlinks {
+    position: relative;
+    top: 5px;
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+}
+
+.optlinks > .remember {
+    position: relative;
+    width: 50%;
+    height: 40px;
+    float: left;
+}
+
+.remember > input[name='checkbox']::before {
+    background: white;
+    border: none;
+}
+
+.remember > label {
+    color: #646464;
+    font-size: 1em;
+}
+
+.remember > label:hover {
+    color: #28829E;
+}
+
+.optlinks > .forgot {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 40px;
+    float: right;
+    text-align: right;
+    font-size: 1em;
+    color: #646464;
+}
+
+.optlinks > .forgot:hover {
+    color: #28829E;
+}
+
+.optlinks::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box button[type="submit"] {
+    position: relative;
+    width: 80%;
+    top: 15px;
+    margin-left: 10%;
+    height: 50px;
+    background: #4CB1D1;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 15px;
+}
+.box button[type="submit"]:hover, .box button[type="submit"]:focus {
+    cursor: pointer;
+    background: #3092B2;
+}
+    

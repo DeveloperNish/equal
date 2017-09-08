@@ -15,5 +15,9 @@
             "cwd": "${fileDirname}",
             "port": 9000
         }
-    ]
+    ],
+    "files.associations": {
+        // extension name : html
+        "*.blade.php": "html",
+    }
 }
