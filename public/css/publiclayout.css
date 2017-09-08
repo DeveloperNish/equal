@@ -22,11 +22,11 @@ textarea:focus, input:focus{
 .wrap {
     position: absolute;
     width: 650px;
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    margin-left: -475px;
+    margin-left: -375px;
     margin-top: -310px;
 }
 
@@ -181,3 +181,30 @@ textarea:focus, input:focus{
     background: #3092B2;
 }
     
+
+/**
+    Register page css
+*/
+
+.registration {
+    height: 500px !important;
+}
+
+.box input[type='text'], input[type='email'] , input[type='password'] {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    height: 55px;
+    border: 2px solid #D28808;
+    border-radius : 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #95989A;
+}
+
+.box input[type='text']:nth-child(2){
+    margin-top: 30px;
+}
