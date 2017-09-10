@@ -1,5 +1,10 @@
 @extends('public.master.layout')
 
+@section('css')
+    {{ Html::style("css/publiclayout.css") }}
+@endsection
+
+
 @section('main-content')
 <div class="grid-container">
     <div class="wrap">

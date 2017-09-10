@@ -1,0 +1,310 @@
+body {
+    background-image: url('../img/bg/polyblur.png');
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, div, span, p, a {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.side-nav {
+    background: rgba(255,255,255,0.4);
+    height: 100vh;
+}
+
+.site-logo {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+}
+
+.top-nav {
+    height: 50px;
+    width: 100%;
+    background: rgba(255,255,255, 0.8);
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:16px;
+    align-items: center;
+}
+
+.top-nav a {
+    color: rgba(0, 0, 0, 0.4);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.top-nav a:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+hr {
+    border-color: white;
+}
+
+.side-nav-list ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.side-nav-list ul li {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.side-nav-list ul li:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+.side-nav-list ul li.active {
+    background: rgba(0,0,0,0.1);
+}
+
+.side-nav-list ul li a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.module-buttons .button {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.module {
+    background: rgba(255,255,255,0.4);
+    padding: 16px;
+    margin-bottom: 16px;
+    color: #333;
+    border-radius: 8px;
+}
+
+.module h3 {
+    font-weight: 700;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.5rem;
+    margin-bottom: 8px
+
+}
+
+
+.module-group-actions .links {
+    display: flex;
+}
+
+.module-group-actions .link {
+    height: 100px;
+    width: 100px;
+    background: rgba(255,255,255,0.4);
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 8px;
+    border-radius: 8px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-group-actions .link:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+.module-group-actions .link img {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.module-group-actions .link p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.module-group-actions .caption {
+    padding-top: 16px;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+
+.module-overview .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.module-overview .text .arrow {
+    display: flex;
+    margin-left: auto;
+}
+
+.module-overview .text .arrow img{
+    opacity: 0.4;
+    height: 50px;
+    align-self: center;
+    object-fit: contain;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-overview .text .arrow img:hover {
+    opacity: 0.8;
+}
+
+.module-overview select {
+    margin: 0;
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    color: rgba(0,0,0,0.6);
+    font-weight:700;
+    font-size: 0.8rem;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgba%280, 0, 0, 0.6%29'></polygon></svg>");
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-overview select:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.module-overview hr {
+    margin: 0;
+    margin-bottom: 8px; 
+}
+
+.module-overview.spent .amount {
+    color: red;
+    font-weight: 300;
+}
+
+.module-overview.received .amount {
+    color: green;
+    font-weight: 300;
+}
+
+.module-messages .message {
+    background: rgba(255,255,255,0.4);
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.module-messages .message .arrow  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.module-messages .message .arrow img {
+    opacity: 0.4;
+    height: 50px;
+    align-self: center;
+    object-fit: contain;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-messages .message .arrow img:hover {
+    opacity: 0.8;
+}
+
+.module-messages .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.module-messages .bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.module-messages .bottom-buttons .author p{
+    display: inline-block;
+    margin: 0;
+    color: rgba(0,0,0,0.4);
+}
+
+.module-messages .bottom-buttons .left .fa,
+.module-messages .bottom-buttons .author {
+    color: rgba(0,0,0,0.4);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-right: 8px;
+}
+
+.module-messages .bottom-buttons .left .fa:hover,
+.module-messages .bottom-buttons .author:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+.module-transactions .transaction {
+    background: rgba(255,255,255,0.4);
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.module-transactions .transaction-header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.module-transactions .transaction-header a {
+    margin-bottom: 8px;
+    color: rgba(0,0,0,0.4);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-transactions .transaction-header a:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+
+
+.module-transactions .content .name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight:400;
+}
+
+.module-transactions .content .location {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.4);
+}
+
+.module-transactions .transaction .date {
+    margin: 0;
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.6);
+    margin-bottom:8px;
+}
+
+.module-transactions .transaction .price {
+    margin:0;
+    display: flex;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.module-transactions .transaction .arrow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.module-transactions .transaction .arrow img {
+    opacity: 0.4;
+    height: 50px;
+    align-self: center;
+    object-fit: contain;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-transactions .transaction .arrow img:hover {
+    opacity: 0.8;
+}
