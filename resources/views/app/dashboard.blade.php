@@ -15,19 +15,14 @@
                         <li><a href="#">Groups</a></li>
                         <li><a href="#">Transactions</a></li>
                         <li><a href="#">Messages</a></li>
+                        <li><a href="#">Settings</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="cell small-12 large-9">
-            <div class="top-nav">
-                <a>
-                    Sunish Manandhar
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </a>
-            </div>
+        <div class="cell small-12 large-9" style="margin-top: 48px;">
             <div class="grid-x grid-padding-x">
                 <div class="cell small-12 medium-6">
                     <div class=" grid-x grid-margin-x module-buttons">
@@ -67,7 +62,7 @@
                                 <div class="text">
                                     <span>
                                         <h3>Spent</h3>
-                                        <h2 class="amount">-$120.43</h2>
+                                        <h3 class="amount">-$120.43</h3>
                                     </span>
                                     <a class="arrow">
                                         <img src="{{url('img/arrow-right.png')}}">
@@ -88,7 +83,7 @@
                                     <div class="text">
                                         <span>
                                             <h3>Received</h3>
-                                            <h2 class="amount">$42.30</h2>
+                                            <h3 class="amount">$42.30</h3>
                                         </span>
                                         <a class="arrow">
                                             <img src="{{url('img/arrow-right.png')}}">

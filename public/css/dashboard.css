@@ -12,37 +12,21 @@ h1, h2, h3, h4, h5, h6, div, span, p, a {
 .side-nav {
     background: rgba(255,255,255,0.4);
     height: 100vh;
+    position: fixed;
+    width: 25%;
 }
 
 .site-logo {
-    max-width: 75%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 32px;
 }
 
-.top-nav {
-    height: 50px;
-    width: 100%;
-    background: rgba(255,255,255, 0.8);
-    margin-bottom: 32px;
+.side-nav-list {
     display: flex;
-    justify-content: flex-end;
-    padding-right:16px;
-    align-items: center;
-}
-
-.top-nav a {
-    color: rgba(0, 0, 0, 0.4);
-    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.top-nav a:hover {
-    color: rgba(0, 0, 0, 0.8);
-}
-
-hr {
-    border-color: white;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 .side-nav-list ul {
@@ -50,6 +34,7 @@ hr {
     margin: 0;
     text-align: center;
     margin-top: 32px;
+    width: 100%;
 }
 
 .side-nav-list ul li {
@@ -67,7 +52,7 @@ hr {
 
 .side-nav-list ul li a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -191,6 +176,11 @@ hr {
     padding: 16px;
     margin-bottom: 8px;
     border-radius: 8px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-messages .message:hover {
+    background: rgba(255,255,255,0.6);
 }
 
 .module-messages .message .arrow  {
@@ -245,6 +235,11 @@ hr {
     padding: 16px;
     margin-bottom: 8px;
     border-radius: 8px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.module-transactions .transaction:hover {
+    background: rgba(255,255,255,0.6);
 }
 
 .module-transactions .transaction-header {
