@@ -26,6 +26,10 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+
+        Route::bind('group',function($value){
+            return \App\Group::where('id',$value)->first();
+        });
     }
 
     /**

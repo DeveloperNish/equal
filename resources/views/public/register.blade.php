@@ -18,13 +18,17 @@
             <div class="box registration">
                 <form method="POST" action="{{ route('public.register') }}">
                     {{ csrf_field() }}
-                    <input type="text" name="firstname" placeholder="Firstname">
-                    <input type="text" name="lastname" placeholder="Lastname">
-                    <input type="email" name="email" placeholder="Email">
-                    <input type="password" name="password" placeholder="Password">
-                    <input type="password" name="password_confirmation" placeholder="Retype Password">
+                    <input type="text" name="firstname" placeholder="Firstname" required>
+                    <input type="text" name="lastname" placeholder="Lastname" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="password_confirmation" placeholder="Retype Password" required>
                     <button type="submit">Register</button>
                 </form>
+
+                <div class="errors">
+                    @include('errors.list')
+                </div>
             </div>
         </div>
     </div>

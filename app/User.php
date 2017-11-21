@@ -43,8 +43,39 @@ class User extends Authenticatable
         }
     }
 
+    public function existsInGroup(Group $group) {
+        foreach($group->users as $user) {
+            if($user == $this) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function changeCurrentGroup(Group $group) {
+        if($this->existsInGroup) {
+            
+        }
+    }
+
     public function getCurrentGroupId() {
         return $this->getCurrentGroup()->id;
+    }
+
+    public function changeCurrentGroup(Group $group) {
+        //check if the user is in the group provided
+        if($this->existsInGroup($group)) {
+
+        }
+
+        //if it exists then change its current value to 1
+        
+        //get current group
+        $curGroup = $this->getCurrentGroup();
+        //find the current realtional data column
+
+        //change the current group field to false = 0
+
     }
 
     public function getGroupsOtherThanCurrent(){
@@ -83,6 +114,10 @@ class User extends Authenticatable
             }
         }
         return $result;
+    }
+
+    public function test() {
+        return "test";
     }
 
     /**     

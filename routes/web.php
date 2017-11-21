@@ -78,8 +78,21 @@ Route::get('/', function () {
 });
 */
 
-Auth::routes();
 
+//Public Routes
 Route::get('/','PublicController@index')->name('public.index');
-Route::get('/register','PublicController@register')->name('public.register');
+Route::get('/login','SessionsController@create')->name('public.login');
+Route::post('/login','SessionsController@store');
+Route::get('/register','RegistrationController@create')->name('public.register');
+Route::post('/register','RegistrationController@store');
+
+//Private routes
 Route::get('/dashboard','DashboardController@index')->name('app.dashboard');
+Route::get('/logout','SessionsController@destroy')->name('app.logout');
+
+
+Route::get('/group/create','GroupController@create')->name('app.group.create');
+Route::post('/group/create','GroupController@store');
+Route::get('/group/{group}','GroupController@show')->name('app.group.show');
+
+

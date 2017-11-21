@@ -1,7 +1,9 @@
-@extends('public.master.layout') @section('css') {{ Html::style("css/dashboard.css") }} @endsection @section('main-content')
+@extends('public.master.layout') 
+@section('css') 
+    {{ Html::style("css/dashboard.css") }} 
+@endsection
 
-
-
+@section('main-content')
 <div class="grid-container full">
         <div class="grid-x">
         <div class="cell small-3 show-for-large">

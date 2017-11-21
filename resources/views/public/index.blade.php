@@ -17,7 +17,7 @@
                 <a href="{{ route('public.register') }}">Register</a>
             </div>
             <div class="box">
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('public.login') }}">
                     {{ csrf_field() }}
                     <input type="email" name="email" placeholder="Email" class="inputfield">
                     <input type="password" name="password" placeholder="Password" class="inputfield">
@@ -27,6 +27,9 @@
                     </div>
                     <button type="submit">Login</button>
                 </form>
+            </div>
+            <div class="errors">
+                @include('errors.list')
             </div>
         </div>
     </div>

@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
+
 class Group extends Model
 {
     use Notifiable;
@@ -19,7 +20,7 @@ class Group extends Model
     ];
 
     public function users(){
-    	return $this->belongsToMany('App\User','GroupUser')->withPivot('role','current')->using('App\GroupUser');
+    	return $this->belongsToMany('App\User','GroupUser')->withPivot('role','current')->using('App\GroupUser')->withTimestamps();
     }
 
     public function getCurrentUsers() {
@@ -47,5 +48,5 @@ class Group extends Model
         }
         return $result;
     }
-
+    
 }
